@@ -1,0 +1,78 @@
+\documentclass[oneside,senior,etd]{BYUPhys}
+
+\usepackage[utf8]{inputenc}
+\usepackage{rotating} 
+
+\usepackage[english, russian]{babel}
+\usepackage{listings}
+\usepackage{amsfonts} % Пакеты для математических символов и теорем
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx} % Пакеты для вставки графики
+\usepackage{subfig}
+\usepackage{color}
+\usepackage[unicode]{hyperref} 
+\usepackage[nottoc]{tocbibind} % Для того, чтобы список литературы отображался в оглавлении
+\usepackage{algorithmic} % Для записи алгоритмов в псевдокоде
+\usepackage{algorithm}
+\usepackage{verbatim} % Для вставок заранее подготовленного текста в режиме as-is
+\usepackage{indentfirst}
+
+\usepackage{tikz} 
+\usetikzlibrary{shadows,arrows}
+
+\Chair{Кафедра алгоритмических языков}
+\Lab{~}
+\Year{2018}
+  \Month{}
+  \City{Москва}
+  \AuthorText{Автор}
+  \Author{Шавалиева Ралина Забировна}
+  \AuthorEng{}
+  \AcadGroup{425}
+
+  \TitleTop{Автоматическое извлечение гиперонимов}
+  \TitleBottom{из больших текстовых корпусов.} % leave empty if you don't need it
+  \TitleTopEng{Development of iterative algorithms for searching}
+  \TitleBottomEng{automorphisms and isomorphisms of combinatorial objects.} % leave empty if you don't need it  
+  \docname{ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ РАБОТА}
+  \Advisor{должность???
+  
+  Лукашевич Наталья Валентиновна}  
+  \AdvisorDegree{}
+
+
+
+%%%% DON'T change this. It is here because .sty does not support cyrillic cp properly %%%%
+\University{Московский государственный университет имени М.В.Ломоносова}
+\Faculty{Факультет вычислительной математики и кибернетики}
+\GrText{группа}
+\AdvisorText{Научный руководитель}
+
+\begin{document}
+\fixmargins
+\makepreliminarypages
+
+\oneandhalfspace
+
+\tableofcontents
+
+\include{Introduction} % введение
+\include{Chapter_1} % постановка задачи
+\include{Chapter_2} % определения и обозначения
+\include{Chapter_3} % описание алгоритма
+\include{Chapter_4} % исследование алгоритма 
+\include{Chapter_5} % модернизация алгоритма
+\include{Chapter_6} % практическое применение
+\include{Conclusion} % заключение
+
+\nocite{*}
+\bibliographystyle{utf8gost71u}
+\bibliography{References}
+
+\include{Appendix_A} % приложение
+\include{Appendix_B} % приложение
+
+
+\end{document}

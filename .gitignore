@@ -1,0 +1,8 @@
+*.aux
+*.bbl
+*.blg
+*.log
+/docs/main.*
+!/docs/main.tex
+!/docs/main.pdf
+
