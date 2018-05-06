@@ -252,15 +252,33 @@ $$\sum_{x = (u, v, q)} \sum_{j = 1}^{q} max(0, f(x) - f(x'_j) + m(x, x'_j))$$
 Обучение такой модели сводится к обучению нейронной сети, имеющей
 следующую архитектуру:
 
-СТР 11:
+\begin{figure}[H]
+\centering 
+    \includegraphics[scale=0.6]{image/NN_part1_new.png}
+    \caption{$p(x)$ - вычисление расстояния между векторами $O(u)$ и $E(v)$ для $x = (u, v, q)$.}
+    \label{srg}
+\end{figure}
 
-КАРТИНКА 1
+\begin{figure}[H]
+\centering 
+    \includegraphics[scale=0.6]{image/NN_part2_new.png}
+    \caption{$L(x, x’)$ - вычисление ошибки для триплета x и его негативного примера $x’$.}
+    \label{srg}
+\end{figure}
 
-КАРТИНКА 2
+\begin{figure}[H]
+\centering 
+    \includegraphics[scale=0.6]{image/NN_part3_new.png}
+    \caption{$L(x)$ - вычисление суммарной ошибки для триплета $x$.}
+    \label{srg}
+\end{figure}
 
-КАРТИНКА 3
-
-КАРТИНКА 4
+\begin{figure}[H]
+\centering 
+    \includegraphics[scale=0.6]{image/NN_part4_new.png}
+    \caption{$L$ - вычисление функции потерь модели.}
+    \label{srg}
+\end{figure}
 
 Модель оптимизируется алгоритмом SGD.
 
